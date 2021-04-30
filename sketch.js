@@ -15,26 +15,26 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-    ground = new Ground(200,780,1200,20);
+    ground = new Ground(400,780,800,20);
 
     for(var k=0; k<=width; k=k+80){
         division.push(new Division(k, height-divisionHeight/2, 10, divisionHeight));
     }
 
     for(var j=75; j<=width; j=j+50){
-        plinkos.push(new Plinko(j, 75, 10));
+        plinkos.push(new Plinko(j, 75));
     }
 
     for(var p=50; p<=width-10; p=p+50){
-        plinkos.push(new Plinko(p, 175, 10));
+        plinkos.push(new Plinko(p, 175));
     }
 
     for(var o=75; o<=width; o=o+50){
-        plinkos.push(new Plinko(o, 275, 10));
+        plinkos.push(new Plinko(o, 275));
     }
 
     for(var t=50; t<=width-10; t=t+50){
-        plinkos.push(new Plinko(t, 175, 10));
+        plinkos.push(new Plinko(t, 175));
     }
 
 }

@@ -1,5 +1,5 @@
 class Plinko {
-  constructor(x, y, r) {
+  constructor(x, y) {
     var options = {
         restitution:1,
         friction:0,
